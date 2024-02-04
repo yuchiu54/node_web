@@ -2,6 +2,7 @@ const express = require("express")
 server = express()
 
 server.get("/", (req, res) => {
+    console.log("[ log ] visited");
     res.send("Request passes WAF")
 })
 
